@@ -59,49 +59,42 @@
 
 --select * from employee;
 
--- ID'si 1 olan çalışanın adını güncelleme
+--UPDATE some datas
 UPDATE employee
 SET name = 'Jonathan Doe'
 WHERE id = 1;
 
--- Adı 'Jane Smith' olan çalışanın doğum tarihini güncelleme
 UPDATE employee
 SET birthday = '1991-05-15'
 WHERE name = 'Jane Smith';
 
--- Doğum tarihi '1978-12-01' olan çalışanın e-posta adresini güncelleme
 UPDATE employee
 SET email = 'new.email@example.com'
 WHERE birthday = '1978-12-01';
 
--- E-posta adresi 'emily.brown@example.com' olan çalışanın adını güncelleme
 UPDATE employee
 SET name = 'Emma Brown'
 WHERE email = 'emily.brown@example.com';
 
--- ID'si 50 olan çalışanın doğum tarihini güncelleme
 UPDATE employee
 SET birthday = '1993-08-20'
 WHERE id = 50;
 
 
--- ID'si 2 olan çalışanı silme
+--DELETE some datas
+
 DELETE FROM employee
 WHERE id = 2;
 
--- Adı 'Michael Johnson' olan çalışanı silme
 DELETE FROM employee
 WHERE name = 'Michael Johnson';
 
--- Doğum tarihi '1982-11-30' olan çalışanı silme
 DELETE FROM employee
 WHERE birthday = '1982-11-30';
 
--- E-posta adresi 'alice.johnson@example.com' olan çalışanı silme
 DELETE FROM employee
 WHERE email = 'alice.johnson@example.com';
 
--- ID'si 3 olan çalışanı silme
 DELETE FROM employee
 WHERE id = 3;
 
